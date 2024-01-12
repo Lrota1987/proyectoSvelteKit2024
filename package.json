@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"json-server":"json-server --watch db.json --port 4000"
+		"json-server":"json-server --watch db.json --port 4000 --delay 1000"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",

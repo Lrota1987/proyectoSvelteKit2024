@@ -91,6 +91,32 @@
                 ]
             }
             ]
+        },
+        {
+            "id":2,
+            "preguntas": [
+                {
+                    "Pregunta":"¿País más grande del mundo?",
+                    "respuestas": [
+                        {
+                            "resp":"Mongolia",
+                            "correcto":false
+                        },
+                        {
+                            "resp":"Estados Unidos",
+                            "correcto":false
+                        },
+                        {
+                            "resp":"Rusia",
+                            "correcto":true
+                        },
+                        {
+                            "resp":"Australia",
+                            "correcto":false
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "teachers": [
