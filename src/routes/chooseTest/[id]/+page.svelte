@@ -1,9 +1,10 @@
-<script>
-  export let data;
-  export const test = data.test;
-  console.log(data);
+<script>  
   import Pregunta from "../../../lib/cuestionario/Pregunta.svelte";
   import store from "../../../stores/store";
+  import AdminResp from "../../../lib/cuestionario/adminResp.svelte";
+  export let data;
+  export const test = data.test;
+
 </script>
 
 <div id="fondo">
@@ -14,19 +15,20 @@
         preguntas={test.preguntas}
         />
     </div>
-    {/if}
-<!--
-
-  <div>
-  <p>{test.preguntas[0].Pregunta}</p>
-</div>
-    {:else}
-      <AdminResp/>
     
+    {:else}
+      <AdminResp
+        preguntas={test.preguntas}
+        />
+
+      {/if}
+    <!--
     <div class="container-menu">
       <Menu/>
     </div>
-    <div class="footer">
+      <div>
+      <p>{test.preguntas[0].Pregunta}</p>
+      </div>
       -->
     
     
