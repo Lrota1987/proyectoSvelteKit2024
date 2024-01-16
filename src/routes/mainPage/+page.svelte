@@ -1,2 +1,4 @@
+
+
 <p>Main Page</p>
-<a href={"/chooseTest"}>Choose a test</a>
+<a href={"./mainPage/chooseTest"}>Choose a test</a>

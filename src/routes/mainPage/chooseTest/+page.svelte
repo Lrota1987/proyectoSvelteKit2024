@@ -1,9 +1,12 @@
 <script>
     export let data;
     let tests = data.choosetest;
+
+
 </script>
+
 <p>Choose a test</p>
 {#each tests as test}
-    <a href="./chooseTest/{test.id}">test número: {test.id}</a><br/>
+    <a data-sveltekit-preload-data="tap" href="./chooseTest/{test.id}">test número: {test.id}</a><br/>
 {/each}
 

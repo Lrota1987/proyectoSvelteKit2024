@@ -1,7 +1,7 @@
 <script>  
-  import Pregunta from "../../../lib/cuestionario/Pregunta.svelte";
-  import store from "../../../stores/store";
-  import AdminResp from "../../../lib/cuestionario/adminResp.svelte";
+  import Pregunta from "../../../../lib/cuestionario/Pregunta.svelte";
+  import store from "../../../../stores/store";
+  import AdminResp from "../../../../lib/cuestionario/adminResp.svelte";
   export let data;
   export const test = data.test;
 
@@ -12,7 +12,7 @@
     {#if $store.salir === false}
     <div class="container-preg" >
       <Pregunta
-        preguntas={test.preguntas}
+        bind:preguntas={test.preguntas}
         />
     </div>
     
@@ -69,7 +69,7 @@
 }
 
 #fondo {
-  background-image: url("../../../assets/fondobueno.png");
+  background-image: url("../../../../assets/fondobueno.png");
   box-sizing: border-box;
   position: relative;
   background-size:cover;
@@ -80,7 +80,7 @@
   
 }
 #fondo2 {
-  background-image: url("../../../assets/picmix.com_863058.gif");
+  background-image: url("../../../../assets/picmix.com_863058.gif");
 
   position: absolute;
   background-size:cover;

@@ -18,7 +18,7 @@
 
 
     const handleSubmit = async () => {
-        const response = await fetch('api/auth/login', {
+        const response = await fetch('../api/auth/login', {
             method: 'POST',
             body: JSON.stringify({
                 username,
@@ -81,8 +81,6 @@
 
 
 <p>Log In</p>
-
-<p>{teachers[0].name}</p>
 
 
 <form  on:submit|preventDefault={handleSubmit}>

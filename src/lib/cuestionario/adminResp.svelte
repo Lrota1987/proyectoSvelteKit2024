@@ -1,5 +1,7 @@
 <script>
     import storeResp from "../../stores/storeRespuestas"
+    import store from "../../stores/store"
+    import { goto } from "$app/navigation";
 
     export let preguntas;
     let cont = 0;
@@ -12,15 +14,38 @@
             cont++;
         }
         }
+
+    const handleClick = () => {
+    $storeResp.respuestasEval = [];
+    $store.salir = false;
+    window.location.assign("/mainPage");
+}
+
     
 </script>
 <div class="solution">
 <h2 id="finalSol">Has respondido correctamente {cont} de {numPreguntas} preguntas.</h2>
 </div>
+<div class="boton-salir">
+    <button on:click={handleClick}>
+        Salir
+    </button>
+</div>
 
 <style>
 
-
+    button {
+        font-size:x-large;
+        height: 50px;
+        width: 100px;
+        text-decoration: none;
+    }
+    .boton-salir {
+        position: absolute;
+        top:60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     .solution {
         background-color: blueviolet;
         position:absolute;
