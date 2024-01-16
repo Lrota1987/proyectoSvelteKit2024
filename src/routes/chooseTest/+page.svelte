@@ -4,6 +4,6 @@
 </script>
 <p>Choose a test</p>
 {#each tests as test}
-    <a href="./{test.id}">test número: {test.id}</a><br/>
+    <a href="./chooseTest/{test.id}">test número: {test.id}</a><br/>
 {/each}
 

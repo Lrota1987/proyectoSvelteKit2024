@@ -119,13 +119,15 @@
             ]
         }
     ],
-    "teachers": [
-        {
-            "name":"pepe",
-            "password":"123"
-        }
-    ],
-    "students": [
-
-    ]
+    "users": {
+        "teachers": [
+            {
+                "name":"pepe",
+                "password":"123"
+            }
+        ],
+        "students": [
+    
+        ]
+    }
 }
