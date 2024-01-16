@@ -4,7 +4,7 @@ export const load = async (serverLoadEvent) => {
     console.log('Funcion load llamada en cuestionario-page.server.js');
     const { fetch, params } = serverLoadEvent;
     const { id } = params;
-    const response = await fetch(`http://localhost:4000/test/${id}`);
+    const response = await fetch(`http://localhost:4001/test/${id}`);
     if (response.status === 404) {
         throw error(404, {message: 'Items not found,', hint:'Try a different test'});
     }
