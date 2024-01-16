@@ -7,6 +7,6 @@
 
 <p>Choose a test</p>
 {#each tests as test}
-    <a data-sveltekit-preload-data="tap" href="./chooseTest/{test.id}">test número: {test.id}</a><br/>
+    <a data-sveltekit-preload-data="tap" href="/mainPage/chooseTest/{test.id}">test número: {test.id}</a><br/>
 {/each}
 
