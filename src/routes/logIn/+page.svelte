@@ -1,5 +1,7 @@
 <script>
     import { goto } from '$app/navigation';
+    import storeIsTeacherStudent from '../../stores/storeIsTeacherStudent.js'
+	import AdminResp from '../../lib/cuestionario/adminResp.svelte';
 
     export let data;
 
@@ -11,11 +13,14 @@
     let username ='';
     let password ='';
 
-    let wrongName =false;
-    let wrongPass =false;
+    let wrongName = false;
+    let wrongPass = false;
 
     let rightName = false;
     let rightPass = false;
+
+    $storeIsTeacherStudent.isStudent = false;
+    $storeIsTeacherStudent.isTeacher = false;
 
 
 
@@ -35,7 +40,7 @@
             if (student.name === username) {
                 wrongName = false;
                 rightName = true;
-                console.log("se mete en nombre");
+                
             }
             else {
                 wrongName = true;
@@ -49,6 +54,9 @@
             else {
                 wrongPass = true;
                 rightPass = false;
+            }
+            if (rightName===true || rightPass===true) {
+                $storeIsTeacherStudent.isStudent  = true;
             }
         }
         if (rightName===false || rightPass===false) {
@@ -69,6 +77,9 @@
                 wrongPass = true;
                 rightPass = false;
             }
+            if (rightName===true || rightPass===true) {
+                $storeIsTeacherStudent.isTeacher = true;
+            }
         }
         }
         
@@ -76,7 +87,12 @@
 
         if (rightName && rightPass) {
             if (response.ok) {
-                goto('/mainPage');
+                if ($storeIsTeacherStudent.isStudent) {
+                    goto('/studentPage');
+                }
+                if ($storeIsTeacherStudent.isTeacher) {
+                    goto('/teacherPage');
+                }
             }
             else {
                 alert(data.message);

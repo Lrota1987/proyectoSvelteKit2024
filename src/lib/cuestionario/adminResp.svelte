@@ -18,7 +18,7 @@
     const handleClick = () => {
     $storeResp.respuestasEval = [];
     $store.salir = false;
-    window.location.assign("/mainPage");
+    window.location.assign("/studentPage");
 }
 
     

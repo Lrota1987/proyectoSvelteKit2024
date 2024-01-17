@@ -1,7 +1,6 @@
 <script>
     import { page } from '$app/stores';
-    import storeResp from "../stores/storeRespuestas"
-    import store from "../stores/store"
+    import storeIsTeacherStudent from '../stores/storeIsTeacherStudent.js'
 
 
 </script>
@@ -21,7 +20,11 @@
     {:else}
         <header class="layout-header2">
             {#if !$page.data.test}
-            <a href="/mainPage">Personal</a>
+                {#if $storeIsTeacherStudent.isTeacher}
+                    <a href="/teacherPage">Personal</a>
+                {:else}
+                    <a href="/studentPage">Personal</a>
+                {/if}
             <form action="/logIn?/logout&redirectTo=/" method="POST">
                 <button type="submit">Logout</button>
             </form>
@@ -31,6 +34,7 @@
 
 {#if $page.data.username}
     <p class="welcome">Welcome {$page.data.username}</p>
+
 {/if}
 <style>
     form {

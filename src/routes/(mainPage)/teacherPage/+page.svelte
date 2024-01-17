@@ -4,6 +4,5 @@
     export let data;
     console.log(data.username);
 </script>
-
-<p>Main Page</p>
-<a href={"/mainPage/chooseTest"}>Choose a test</a>
+<p>You are a Teacher</p>
+<p>Teacher Personal Page</p>
