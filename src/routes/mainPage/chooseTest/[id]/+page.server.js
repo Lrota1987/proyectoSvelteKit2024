@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 
+
 export const load = async (serverLoadEvent) => {
     console.log('Funcion load llamada en cuestionario-page.server.js');
     const { fetch, params } = serverLoadEvent;

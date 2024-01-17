@@ -3,8 +3,10 @@
 
     export let data;
 
-    var students = data.users.students;
-    var teachers = data.users.teachers;
+    export var students = data.users.students;
+    export var teachers = data.users.teachers;
+
+    console.log(students);
 
     let username ='';
     let password ='';
@@ -18,6 +20,7 @@
 
 
     const handleSubmit = async () => {
+        
         const response = await fetch('../api/auth/login', {
             method: 'POST',
             body: JSON.stringify({
@@ -28,10 +31,11 @@
 
         const data = await response.json;
 
-        for (let student of students) {
+            for (let student of students) {
             if (student.name === username) {
                 wrongName = false;
                 rightName = true;
+                console.log("se mete en nombre");
             }
             else {
                 wrongName = true;
@@ -40,14 +44,15 @@
             if (student.password === password) {
                 wrongPass = false;
                 rightPass = true;
+                console.log("se mete en password");
             }
             else {
                 wrongPass = true;
                 rightPass = false;
             }
         }
-
-        for (let teacher of teachers) {
+        if (rightName===false || rightPass===false) {
+            for (let teacher of teachers) {
             if (teacher.name === username) {
                 wrongName = false;
                 rightName = true;
@@ -65,6 +70,9 @@
                 rightPass = false;
             }
         }
+        }
+        
+
 
         if (rightName && rightPass) {
             if (response.ok) {

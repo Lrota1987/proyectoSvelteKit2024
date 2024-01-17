@@ -127,6 +127,10 @@
             }
         ],
         "students": [
+            {
+                "name":"jose",
+                "password":"123"
+            }
     
         ]
     }
