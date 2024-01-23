@@ -1,137 +1,144 @@
 {
-    "test": [
+  "test": [
+    {
+      "id": 1,
+      "preguntas": [
         {
-            "id":1,
-            "preguntas": [
+          "Pregunta": "1 + 1 =",
+          "respuestas": [
             {
-                "Pregunta":"1 + 1 =",
-                "respuestas": [
-                    {
-                        "resp":"3",
-                        "correcto":false
-                    },
-                    {
-                        "resp":"2",
-                        "correcto":true
-                    },
-                    {
-                        "resp":"4",
-                        "correcto":false
-                    },
-                    {
-                        "resp":"7",
-                        "correcto":false
-                    }
-                ]
-            },
-
-            {
-                    "Pregunta":"¿Quién descubrió América?",
-                    "respuestas": [
-                        {
-                            "resp":"Magallanes",
-                            "correcto":false
-                        },
-                        {
-                            "resp":"Vasco da Gama",
-                            "correcto":false
-                        },
-                        {
-                            "resp":"Americo Vespuccio",
-                            "correcto":false
-                        },
-                        {
-                            "resp":"Cristobal Colón",
-                            "correcto":true
-                        }
-                        
-                    ]
-            },
-        
-            {
-                "Pregunta":"¿Cuál es la capital de España?",
-                "respuestas": [
-                    {
-                        "resp":"Madrid",
-                        "correcto":true
-                    },
-                    {
-                        "resp":"Londres",
-                        "correcto":false
-                    },
-                    {
-                        "resp":"París",
-                        "correcto":false
-                    },
-                    {
-                        "resp":"Berlín",
-                        "correcto":false
-                    }
-                ]
+              "resp": "3",
+              "correcto": false
             },
             {
-                "Pregunta":"¿Cuál es el río más largo de la península ibérica?",
-                "respuestas": [
-                    {
-                        "resp":"Ebro",
-                        "correcto":false
-                    },
-                    {
-                        "resp":"Miño",
-                        "correcto":false
-                    },
-                    {
-                        "resp":"Tajo",
-                        "correcto":true
-                    },
-                    {
-                        "resp":"Duero",
-                        "correcto":false
-                    }
-                ]
+              "resp": "2",
+              "correcto": true
+            },
+            {
+              "resp": "4",
+              "correcto": false
+            },
+            {
+              "resp": "7",
+              "correcto": false
             }
-            ]
+          ]
         },
         {
-            "id":2,
-            "preguntas": [
-                {
-                    "Pregunta":"¿País más grande del mundo?",
-                    "respuestas": [
-                        {
-                            "resp":"Mongolia",
-                            "correcto":false
-                        },
-                        {
-                            "resp":"Estados Unidos",
-                            "correcto":false
-                        },
-                        {
-                            "resp":"Rusia",
-                            "correcto":true
-                        },
-                        {
-                            "resp":"Australia",
-                            "correcto":false
-                        }
-                    ]
-                }
-            ]
+          "Pregunta": "¿Quién descubrió América?",
+          "respuestas": [
+            {
+              "resp": "Magallanes",
+              "correcto": false
+            },
+            {
+              "resp": "Vasco da Gama",
+              "correcto": false
+            },
+            {
+              "resp": "Americo Vespuccio",
+              "correcto": false
+            },
+            {
+              "resp": "Cristobal Colón",
+              "correcto": true
+            }
+          ]
+        },
+        {
+          "Pregunta": "¿Cuál es la capital de España?",
+          "respuestas": [
+            {
+              "resp": "Madrid",
+              "correcto": true
+            },
+            {
+              "resp": "Londres",
+              "correcto": false
+            },
+            {
+              "resp": "París",
+              "correcto": false
+            },
+            {
+              "resp": "Berlín",
+              "correcto": false
+            }
+          ]
+        },
+        {
+          "Pregunta": "¿Cuál es el río más largo de la península ibérica?",
+          "respuestas": [
+            {
+              "resp": "Ebro",
+              "correcto": false
+            },
+            {
+              "resp": "Miño",
+              "correcto": false
+            },
+            {
+              "resp": "Tajo",
+              "correcto": true
+            },
+            {
+              "resp": "Duero",
+              "correcto": false
+            }
+          ]
         }
-    ],
-    "users": {
-        "teachers": [
+      ]
+    },
+    {
+      "id": 2,
+      "preguntas": [
+        {
+          "Pregunta": "¿País más grande del mundo?",
+          "respuestas": [
             {
-                "name":"pepe",
-                "password":"123"
-            }
-        ],
-        "students": [
+              "resp": "Mongolia",
+              "correcto": false
+            },
             {
-                "name":"jose",
-                "password":"123"
+              "resp": "Estados Unidos",
+              "correcto": false
+            },
+            {
+              "resp": "Rusia",
+              "correcto": true
+            },
+            {
+              "resp": "Australia",
+              "correcto": false
             }
-    
-        ]
+          ]
+        }
+      ]
     }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "pepe",
+      "password": "123",
+      "test": [
+        1,
+        2
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "jose",
+      "password": "123",
+      "teacher": 1
+    },
+    {
+      "id": 2,
+      "name": "lromero13",
+      "password": "123",
+      "teachers": 1
+    }
+  ]
 }

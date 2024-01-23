@@ -3,7 +3,8 @@
     import Header from "$lib/header.svelte";
 </script>
 
-<Header />
+<Header
+     />
 
 {#if $navigating}
     <div class="loading">
