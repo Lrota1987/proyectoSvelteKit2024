@@ -52,6 +52,7 @@ export const actions = {
 
             if (rightName===true && rightPass===true) {
                 isStudent  = true;
+                break;
             }
         }
         if (rightName===false || rightPass===false) {
@@ -74,6 +75,7 @@ export const actions = {
             }
             if (rightName===true && rightPass===true) {
                 isTeacher = true;
+                break;
             }
         }
         }
