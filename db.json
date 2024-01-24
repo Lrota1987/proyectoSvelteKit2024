@@ -138,7 +138,7 @@
       "id": 2,
       "name": "luciano",
       "password": "456",
-      "teachers": 1
+      "teacher": 1
     }
   ]
 }

@@ -1,9 +1,26 @@
 
-export const load = async (serverLoadEvent) => {
-    const { fetch } = serverLoadEvent;
-    const response = await fetch(`http://localhost:4001/test`);
-    const choosetest = await response.json();
-    return { choosetest };
+export const load = async ({ parent }) => {
+    const { username } = await parent();
+    const user = username;
+    var arrayTest = [];
+    const response = await fetch(`http://localhost:4001/teachers`);
+    const teachers = await response.json();
+
+    const response2 = await fetch(`http://localhost:4001/students`);
+    const students = await response2.json();
+
+    for (var student of students) {
+        if (user === student.name) {
+            for (var teacher of teachers) {
+                if (teacher.id === student.teacher) {
+                    console.log(teacher.test);
+                    arrayTest = teacher.test;
+                }
+            }
+        }
+    }
+    
+    return { arrayTest };
 }
 
 
