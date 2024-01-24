@@ -4,22 +4,22 @@
       "id": 1,
       "preguntas": [
         {
-          "Pregunta": "1 + 1 =",
+          "Pregunta": "5 + 5 =",
           "respuestas": [
-            {
-              "resp": "3",
-              "correcto": false
-            },
-            {
-              "resp": "2",
-              "correcto": true
-            },
             {
               "resp": "4",
               "correcto": false
             },
             {
-              "resp": "7",
+              "resp": "15",
+              "correcto": false
+            },
+            {
+              "resp": "10",
+              "correcto": true
+            },
+            {
+              "resp": "3",
               "correcto": false
             }
           ]
