@@ -126,7 +126,7 @@
 
                     </td>
                     <td>
-                        <input type="text" id="teachername" name="teachername">
+                        <input type="text" id="teachername" name="teachername" required>
                     </td>
                 </tr>
                 <tr>
