@@ -13,7 +13,7 @@ export const load = async ({ parent }) => {
         if (user === student.name) {
             for (var teacher of teachers) {
                 if (teacher.id === student.teacher) {
-                    console.log(teacher.test);
+                    console.log(">>>>>>>",teacher.test);
                     arrayTest = teacher.test;
                 }
             }
