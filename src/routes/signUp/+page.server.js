@@ -44,10 +44,11 @@ export const actions = {
                                 teacherNameOk = true;
                                 teacherId=teacher.id;
                             }
-                            if (!teacherNameOk) {
-                                return fail(400, { teacherNameNotExists: true});
-                            }
+
                             
+                        }
+                        if (!teacherNameOk) {
+                            return fail(400, { teacherNameNotExists: true});
                         }
                     }
                 
@@ -62,7 +63,7 @@ export const actions = {
                     id: pickedId,
                     name: username,
                     password: password,
-                    teachers: teacherId
+                    teacher: teacherId
                 };
 
                 const response2 = await fetch('http://localhost:4001/students', {

@@ -8,3 +8,5 @@
 <a href="teacherPage/createTest">Create a test</a>
 <br>
 <a href="teacherPage/updateTest">Update a test</a>
+<br>
+<a href="teacherPage/userSettings">User Settings</a>
