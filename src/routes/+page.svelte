@@ -1,5 +1,8 @@
 
-
+    <video autoplay muted loop id="myVideo">
+        <source src="/src/assets/EscenariosWeb.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
     <h3>HALL</h3>
     <fieldset class="fielmedio">
         <div class="contenedor">
@@ -22,7 +25,13 @@
         flex-direction: column;
         justify-content: center;
     }
-    
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
     .marco{       
         display: flex;
         align-items: center;
