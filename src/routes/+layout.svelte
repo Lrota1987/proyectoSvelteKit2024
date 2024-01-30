@@ -5,7 +5,7 @@
 
 <Header
      />
-
+<div class="container">
 {#if $navigating}
     <div class="loading">
         <p class="loading--text">loading...</p>
@@ -15,7 +15,15 @@
 <slot />
 
 {/if}
+</div>
 
+<style lang="scss">
+    .container {
+        background-image: linear-gradient(#7cabf1, #0b6285);
+        height: 100%;
+        margin-top: -20px
+    }
+</style>
 
 
 

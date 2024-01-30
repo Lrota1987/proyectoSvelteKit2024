@@ -26,17 +26,14 @@
                 {:else}
                     <a href="/studentPage">Personal</a>
                 {/if}
-            <form action="/logIn?/logout&redirectTo=/" method="POST">
-                <button type="submit">Logout</button>
-            </form>
-        {/if}
+                <form action="/logIn?/logout&redirectTo=/" method="POST">
+                    <button type="submit">Logout</button>
+                </form>
+            {/if}
         </header>
     {/if}
 
-{#if $page.data.username}
-    <p class="welcome">Welcome {$page.data.username}</p>
 
-{/if}
 <style>
     form {
         display: inline-block;
