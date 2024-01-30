@@ -133,12 +133,6 @@
       "name": "jose",
       "password": "123",
       "teacher": 1
-    },
-    {
-      "id": 2,
-      "name": "luciano",
-      "password": "456",
-      "teacher": 1
     }
   ]
 }

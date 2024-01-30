@@ -1,15 +1,17 @@
 
-    <h3>HALL</h3>
-    <fieldset class="fielmedio">
-        <div class="contenedor">
-            <div class="marco">
-                <a href="./logIn" class="btn btn-4">Log In</a>
-            </div> 
-            <div class="marco">  
-                <a href="./signUp" class="btn btn-4">Sign Up</a>
-            </div>
-        </div>   
-    </fieldset>
+
+        <h3>HALL</h3>
+        <fieldset class="fielmedio">
+            <div class="contenedor">
+                <div class="marco">
+                    <a href="./logIn" class="btn btn-4">Log In</a>
+                </div> 
+                <div class="marco">  
+                    <a href="./signUp" class="btn btn-4">Sign Up</a>
+                </div>
+            </div>   
+        </fieldset>
+
     
     
 
