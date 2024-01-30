@@ -3,10 +3,10 @@
     <fieldset class="fielmedio">
         <div class="contenedor">
             <div class="marco">
-                <a href="./logIn" class="btn btn-4">Log In</a>
+                <a href="./logIn" class="btn">Log In</a>
             </div> 
             <div class="marco">  
-                <a href="./signUp" class="btn btn-4">Sign Up</a>
+                <a href="./signUp" class="btn">Sign Up</a>
             </div>
         </div>   
     </fieldset>
@@ -14,13 +14,14 @@
     
 
 
-<style lang="scss">
+<style>
     .contenedor{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
+    
     .marco{       
         display: flex;
         align-items: center;
@@ -42,42 +43,41 @@
     }
     .btn{
         color: #fff;
-        cursor: pointer;
-        font-size:46px;
-        font-weight: 400;
-        line-height: 45px;        
-        max-width: 160px; 
+        background-color: rgb(145, 0, 0);
+        cursor: default;
+        font-size:36px;
         position: relative;
-        text-decoration: none;
         text-transform: uppercase;
-        width: 100%;      
-   
+        text-decoration: none;
+        width: 200px;
+        height: 60px;  
+        border-radius: 5px;
+        border: 3px solid rgb(100, 3, 3); 
+        padding: 5px;
+        margin: 10px;   
     }
-    .btn-4 {
-        border: 1px solid;
-        overflow: hidden;
-        
-        &::after {
-            background: #fff;
-            content: "";
-            height: 155px;
-            left: -75px;
-            opacity: .2;
-            position: absolute;
-            top: -50px;
-            transform: rotate(35deg);
-            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-            width: 50px;
-            z-index: -10;
-        }
+    .btn:hover{
+        color: #fff;
+        background-color: rgb(200, 0, 0);
+        font-size:40px;
+        text-decoration:double;
+        background: linear-gradient(-45deg, rgb(145, 0, 0),rgb(175, 0, 0), rgb(255, 0, 0),rgb(145, 0, 0));
+        background-size: 400% 400%;
+        animation: gradient 3s infinite;
+
     }
 
-    .btn-4:hover {
-        
-        &:after {
-            left: 120%;
-            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-        }
-    }
+    @keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
 
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
 </style>
