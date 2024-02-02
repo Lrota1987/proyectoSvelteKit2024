@@ -5,7 +5,7 @@ export const actions = {
         const form = await request.formData();
 		const numPreg = form.get('numPreguntas');
 
-		const username = cookies.get('login');
+		const username = cookies.get('username');
 
 
 

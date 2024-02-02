@@ -2,7 +2,7 @@ import { redirect } from '@sveltejs/kit';
 
 
 export const load = async ({ parent}) => {
-	const { username, role } = await parent();
+	const { role, username } = await parent();
 	const user = username;
 	console.log("-----", username, role);
 	if (!username) {

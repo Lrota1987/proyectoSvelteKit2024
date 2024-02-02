@@ -31,7 +31,7 @@ export const actions = {
 }
 
 export const load = async ({ parent}) => {
-	const { username, role } = await parent();
+	const { role, username } = await parent();
 	const user = username;
 	if (!username) {
         throw redirect(303 /*temporal redirect */, `/`);

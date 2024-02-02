@@ -1,4 +1,5 @@
 import { fail, redirect } from '@sveltejs/kit';
+import jwt from 'jsonwebtoken';
 
 export const actions = {
     async login( { request, cookies} ) {
@@ -88,15 +89,16 @@ export const actions = {
             return fail(400, { passDoesntExists: true});
         }
     
-        
+
+
         if (isStudent) {
-            cookies.set('login', username, { path: '/' });
-            cookies.set('role', 'student', { path: '/' });
+            var token = jwt.sign({username: username, role: 'student'}, '123');
+            cookies.set('login', token, { path: '/' });
             throw redirect(303, '/studentPage');
         }
         if (isTeacher) {
-            cookies.set('login', username, { path: '/' });
-            cookies.set('role', 'teacher', { path: '/' });
+            token = jwt.sign({username: username, role: 'teacher'}, '123');
+            cookies.set('login', token, { path: '/' });
             throw redirect(303, '/teacherPage');
         }
 

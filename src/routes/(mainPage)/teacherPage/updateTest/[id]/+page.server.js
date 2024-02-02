@@ -62,7 +62,6 @@ export const actions = {
 export const load = async ({parent, params}) => {
     const { id } = params;
 	const { username, role } = await parent();
-	console.log("SE METE EN UPDATE TEST".username, role);
 	if (!username) {
         throw redirect(303 /*temporal redirect */, `/`);
 	}

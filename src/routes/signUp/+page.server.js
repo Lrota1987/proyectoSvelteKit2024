@@ -1,4 +1,5 @@
 import { fail, redirect} from '@sveltejs/kit';
+import jwt from 'jsonwebtoken';
 
 export const actions = {
     async registrer({ request, cookies }) {
@@ -7,6 +8,7 @@ export const actions = {
         const password = form.get('password');
         const teacherName = form.get('teachername');
         const role = form.get('role');
+
         if (!username) {
 
 			return fail(400, { usernameMissing: true });
@@ -75,12 +77,13 @@ export const actions = {
                 });
 
                 if (response2.ok) {
+                    var token = jwt.sign({username: username, role: 'student'}, '123');
                     const result = await response2.json();
                     console.log(`New profile added: ${result}`);
-                    cookies.set('login', newProfile.name, {
+                    cookies.set('token', token, {
                         path: '/'
                     });
-                    cookies.set('role', 'student', { path: '/' });
+
                     console.log(cookies.get('login'));
 
                     throw redirect(303, '/studentPage');
@@ -109,13 +112,13 @@ export const actions = {
                 });
 
                 if (response2.ok) {
+                    
                     const result = await response2.json();
+                    token = jwt.sign({username: username, role: 'teacher'}, '123');
                     console.log(`New profile added: ${result}`);
-                    cookies.set('login', newProfile.name, {
+                    cookies.set('login', token, {
                         path: '/'
                     });
-                    cookies.set('role', 'teacher', { path: '/' });
-
                     throw redirect(303, '/teacherPage');
                 }
                 else {

@@ -3,7 +3,7 @@ import { redirect } from '@sveltejs/kit';
 let arrayTest = [];
 
 export const load = async ({ parent }) => {
-	const { username, role } = await parent();
+	const { username, role} = await parent();
 	if (!username) {
         throw redirect(303 /*temporal redirect */, `/`);
 	}
