@@ -1,93 +1,85 @@
 
-<video autoplay muted loop id="myVideo">
-    <source src="/src/assets/EscenariosWeb.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<h3>HALL</h3>
-<fieldset class="fielmedio">
-    <div class="contenedor">
-        <div class="marco">
-            <a href="./logIn" class="btn">Log In</a>
-        </div> 
-        <div class="marco">  
-            <a href="./signUp" class="btn">Sign Up</a>
-        </div>
-    </div>   
-</fieldset>
+
+        <h3>HALL</h3>
+        <fieldset class="fielmedio">
+            <div class="contenedor">
+                <div class="marco">
+                    <a href="./logIn" class="btn btn-4">Log In</a>
+                </div> 
+                <div class="marco">  
+                    <a href="./signUp" class="btn btn-4">Sign Up</a>
+                </div>
+            </div>   
+        </fieldset>
+
+    
+    
 
 
+<style lang="scss">
+    .contenedor{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .marco{       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        text-align: center;
+    }
+    .fielmedio{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: auto;
+        width: auto;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background-color: #03212c1c;
+        border-radius: 10px;  
+    }
+    .btn{
+        color: #fff;
+        cursor: pointer;
+        font-size:46px;
+        font-weight: 400;
+        line-height: 45px;        
+        max-width: 160px; 
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;      
+   
+    }
+    .btn-4 {
+        border: 1px solid;
+        overflow: hidden;
+        
+        &::after {
+            background: #fff;
+            content: "";
+            height: 155px;
+            left: -75px;
+            opacity: .2;
+            position: absolute;
+            top: -50px;
+            transform: rotate(35deg);
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            width: 50px;
+            z-index: -10;
+        }
+    }
 
+    .btn-4:hover {
+        
+        &:after {
+            left: 120%;
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
 
-<style>
-.contenedor{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-.marco{       
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-    text-align: center;
-}
-.fielmedio{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: auto;
-    width: auto;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    background-color: #03212c1c;
-    border-radius: 10px;  
-}
-.btn{
-    color: #fff;
-    background-color: rgb(145, 0, 0);
-    cursor: default;
-    font-size:36px;
-    position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 200px;
-    height: 60px;  
-    border-radius: 5px;
-    border: 3px solid rgb(100, 3, 3); 
-    padding: 5px;
-    margin: 10px;   
-}
-.btn:hover{
-    color: #fff;
-    background-color: rgb(200, 0, 0);
-    font-size:40px;
-    text-decoration:double;
-    background: linear-gradient(-45deg, rgb(145, 0, 0),rgb(175, 0, 0), rgb(255, 0, 0),rgb(145, 0, 0));
-    background-size: 400% 400%;
-    animation: gradient 3s infinite;
-
-}
-
-@keyframes gradient {
-0% {
-  background-position: 0% 50%;
-}
-
-50% {
-  background-position: 100% 50%;
-}
-
-100% {
-  background-position: 0% 50%;
-}
-}
 </style>
