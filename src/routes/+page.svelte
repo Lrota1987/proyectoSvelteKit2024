@@ -49,21 +49,21 @@
     width: auto;
     transform: translate(-50%,-50%);
     text-align: center;
-    background-color: #03212c1c;
+    background-color: #03212c33;
     border-radius: 10px;  
 }
 .btn{
     color: #fff;
-    background-color: rgb(145, 0, 0);
+    background-color: var(--rojo-oscuro-1) ;
     cursor: default;
     font-size:36px;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
     width: 200px;
-    height: 60px;  
+    height: 50px;  
     border-radius: 5px;
-    border: 3px solid rgb(100, 3, 3); 
+    border: 3px solid var(--rojo-oscuro-2); 
     padding: 5px;
     margin: 10px;   
 }
@@ -72,7 +72,7 @@
     background-color: rgb(200, 0, 0);
     font-size:40px;
     text-decoration:double;
-    background: linear-gradient(-45deg, rgb(145, 0, 0),rgb(175, 0, 0), rgb(255, 0, 0),rgb(145, 0, 0));
+    background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
     background-size: 400% 400%;
     animation: gradient 3s infinite;
 

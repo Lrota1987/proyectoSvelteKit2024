@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
@@ -12,12 +13,22 @@
 
 	<style>
 		* {
-    box-sizing: border-box;
-}
+
+    		box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
 
 		body {
+			font-family: 'MedievalSharp' ;
+			font-weight: 600;
 			height: 100vh;
 			margin-bottom: 150px;
+		}
+
+		:root {
+			--rojo-oscuro-1:rgb(145, 0, 0);
+			--rojo-oscuro-2:rgb(100, 3, 3);
 		}
 	</style>
 </html>
