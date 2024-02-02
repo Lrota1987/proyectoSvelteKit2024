@@ -53,10 +53,10 @@
     border-radius: 10px;  
 }
 .btn{
-    color: #fff;
+    color: #ece92a;
     background-color: var(--rojo-oscuro-1) ;
     cursor: default;
-    font-size:36px;
+    font-size:30px;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -70,7 +70,8 @@
 .btn:hover{
     color: #fff;
     background-color: rgb(200, 0, 0);
-    font-size:40px;
+    font-size:36px;
+    height: 50px;  
     text-decoration:double;
     background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
     background-size: 400% 400%;
