@@ -80,11 +80,11 @@ export const actions = {
                     var token = jwt.sign({username: username, role: 'student'}, '123');
                     const result = await response2.json();
                     console.log(`New profile added: ${result}`);
-                    cookies.set('token', token, {
+                    cookies.set('login', token, {
                         path: '/'
                     });
 
-                    console.log(cookies.get('login'));
+                    console.log(cookies.get('login'),' <<<<<<<<');
 
                     throw redirect(303, '/studentPage');
                 }

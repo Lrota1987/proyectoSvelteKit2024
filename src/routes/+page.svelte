@@ -1,10 +1,20 @@
+<script>
+	import { scale } from "svelte/transition";
 
+    var start = false;
+    setTimeout(()=>start=true, 1700);
+</script>
 
 <video autoplay muted loop id="myVideo">
     <source src="/src/assets/EscenariosWeb.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
-<h3>HALL</h3>
+<div class="escudo">
+    <div class="escudo__onda">
+    </div>
+    <img src="/src/assets/escudo-Photoroom.png" alt="ESCUDO" class="escudo__img">
+
+</div>
 <fieldset class="fielmedio">
     <div class="contenedor">
         <div class="marco">
@@ -16,80 +26,144 @@
     </div>   
 </fieldset>
 
-
-
-
-<style>
-.contenedor{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-.marco{       
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-    text-align: center;
-}
-.fielmedio{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: auto;
-    width: auto;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    background-color: #03212c33;
-    border-radius: 10px;  
-}
-.btn{
-    color: #ece92a;
-    background-color: var(--rojo-oscuro-1) ;
-    cursor: default;
-    font-size:30px;
+{#if !start }
+<style lang=scss>
+    .escudo {
     position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 200px;
-    height: 50px;  
-    border-radius: 5px;
-    border: 3px solid var(--rojo-oscuro-2); 
-    padding: 5px;
-    margin: 10px;   
-}
-.btn:hover{
-    color: #fff;
-    background-color: rgb(200, 0, 0);
-    font-size:36px;
-    height: 50px;  
-    text-decoration:double;
-    background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
-    background-size: 400% 400%;
-    animation: gradient 3s infinite;
+    display: flex;
+    justify-content: center;
+    top:-25px;
 
+
+    &__img {
+        animation: shield 1.5s;
+        height: 300px;
+        width: 300px;
+        opacity: 1;
+    }
 }
 
-@keyframes gradient {
-0% {
-  background-position: 0% 50%;
-}
+.contenedor{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
 
-50% {
-  background-position: 100% 50%;
-}
+    @keyframes shield {
+    0% {
+        height: 90vh;
+        width: 45vw;
+        opacity: 0.25;
+    }
+    
+    
+    100% {
+        height: 300px;
+        width: 300px;
+        opacity: 1;
+    }
+    }
 
-100% {
-  background-position: 0% 50%;
-}
-}
+
+
 </style>
+{:else}
+<style lang=scss>
+
+.escudo {
+    position: relative;
+    top:-25px;
+    display: flex;
+    justify-content: center;
+
+    &__img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+    .contenedor{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+    .marco{       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        text-align: center;
+    }
+    .fielmedio{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: auto;
+        width: auto;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        background-color: #03212c33;
+        border-radius: 10px;  
+    }
+    .btn{
+        color: #fff;
+        background-color: var(--rojo-oscuro-1) ;
+        cursor: default;
+        font-size:36px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 200px;
+        height: 50px;  
+        border-radius: 5px;
+        border: 3px solid var(--rojo-oscuro-2); 
+        padding: 5px;
+        margin: 10px;   
+    }
+    .btn:hover{
+        color: #fff;
+        background-color: rgb(200, 0, 0);
+        font-size:40px;
+        text-decoration:double;
+        background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
+        background-size: 400% 400%;
+        animation: gradient 3s infinite;
+    
+    }
+    
+    @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+    }
+    </style>
+{/if}
+
+
+
+

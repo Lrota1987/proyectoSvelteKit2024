@@ -1,11 +1,14 @@
 import { redirect } from '@sveltejs/kit';
+import jwt from 'jsonwebtoken';
 
 export const actions = {
 	async createTest({ request, cookies }) {
         const form = await request.formData();
 		const numPreg = form.get('numPreguntas');
+		const token = cookies.get('login');
+		var username = (jwt.verify(token, '123')).username;
 
-		const username = cookies.get('username');
+		console.log(username);
 
 
 
@@ -112,5 +115,7 @@ export const load = async ({ parent}) => {
 	if ( role !== 'teacher' ) {
 		throw redirect(303 /*temporal redirect */, `/studentPage`);
 	}
+
+	
 
 };
