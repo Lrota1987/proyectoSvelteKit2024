@@ -59,7 +59,10 @@
 
 </script>
 
-
+<video autoplay muted loop id="myVideo">
+    <source src="/src/assets/Profesor_test_videos.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
 <p>Create a test</p>
 <div class="container">
 <form action={"?/createTest&array ="+array } method="POST">
@@ -163,7 +166,15 @@
         align-items:end;
         width: 40%;
     }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
 
+    }
     button {
         height: 25px;
     }

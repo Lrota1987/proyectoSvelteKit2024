@@ -3,6 +3,12 @@
 
     export let data;
 </script>
+
+<video autoplay muted loop id="myVideo">
+    <source src="/src/assets/Profesor_main_video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
 <p class="welcome">Welcome {data.username}</p>
 <p>You are a Teacher</p>
 <p>Teacher Personal Page</p>
@@ -24,6 +30,15 @@
                 height: 500px;
             }
         }
+
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
 
     }
 
