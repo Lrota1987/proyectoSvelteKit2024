@@ -60,6 +60,7 @@
 
     @keyframes shield {
     0% {
+        transform: translate(20%, 20%);
         height: 90vh;
         width: 45vw;
         opacity: 0.25;

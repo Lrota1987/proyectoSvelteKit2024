@@ -23,5 +23,6 @@
 <style>
     .alertPassName {
         color: red;
+
     }
 </style>
