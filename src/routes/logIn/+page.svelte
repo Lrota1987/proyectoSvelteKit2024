@@ -27,6 +27,7 @@
 <style>
     .alertPassName {
         color: red;
+
     }
     #myVideo {
         position: fixed;

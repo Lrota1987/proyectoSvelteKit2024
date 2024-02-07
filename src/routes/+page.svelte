@@ -2,7 +2,7 @@
 	import { scale } from "svelte/transition";
 
     var start = false;
-    setTimeout(()=>start=true, 1700);
+    setTimeout(()=>start=true, 2100);
 </script>
 
 <video autoplay muted loop id="myVideo">
@@ -29,16 +29,17 @@
 {#if !start }
 <style lang=scss>
     .escudo {
-    position: relative;
+    position: absolute;
     display: flex;
-    justify-content: center;
-    top:-25px;
+    justify-content: start;
+    margin-left: 30px;
+
 
 
     &__img {
-        animation: shield 1.5s;
-        height: 300px;
-        width: 300px;
+        animation: shield 2s;
+        height: 150px;
+        width: 150px;
         opacity: 1;
     }
 }
@@ -59,6 +60,7 @@
 
     @keyframes shield {
     0% {
+        transform: translate(20%, 20%);
         height: 90vh;
         width: 45vw;
         opacity: 0.25;
@@ -66,8 +68,8 @@
     
     
     100% {
-        height: 300px;
-        width: 300px;
+        height: 150px;
+        width: 150px;
         opacity: 1;
     }
     }
@@ -79,15 +81,18 @@
 <style lang=scss>
 
 .escudo {
-    position: relative;
-    top:-25px;
-    display: flex;
-    justify-content: center;
+position: absolute;
+display: flex;
+justify-content: start;
+margin-left: 30px;
 
-    &__img {
-        height: 300px;
-        width: 300px;
-    }
+
+
+&__img {
+    height: 150px;
+    width: 150px;
+    opacity: 1;
+}
 }
 
     .contenedor{
