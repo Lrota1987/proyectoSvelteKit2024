@@ -2,6 +2,10 @@
     export let form;
 </script>
 
+<video autoplay muted loop id="myVideo">
+    <source src="/src/assets/LogIn_video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
 
 <p>Log In</p>
 
@@ -23,5 +27,14 @@
 <style>
     .alertPassName {
         color: red;
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
+
     }
 </style>

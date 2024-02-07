@@ -19,9 +19,9 @@
 
 <style lang="scss">
     .container {
-        background-image: linear-gradient(#7cabf1, #0b6285);
+        //background-image: linear-gradient(#7cabf1, #0b6285);
         height: 100%;
-        margin-top: -20px
+        margin-top: 0px
     }
 </style>
 
