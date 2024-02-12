@@ -39,9 +39,10 @@
 
   <style>
 
+
 .container-preg {
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   width: 70%;
   height: 80%;
   top:50%;
@@ -60,13 +61,6 @@
 
 }
 
-.footer {
-  position: absolute;
-  top: 100%;
-  height: 150px;
-  width: 100%;
-  background-image: linear-gradient(LemonChiffon, khaki, LemonChiffon);
-}
 
 #fondo {
   background-image: url("../../../../../assets/fondobueno.png");
@@ -76,7 +70,7 @@
   background-repeat: no-repeat;
   background-position:bottom;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   
 }
 #fondo2 {
