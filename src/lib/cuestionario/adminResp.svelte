@@ -4,8 +4,11 @@
     import { goto } from "$app/navigation";
 
     export let preguntas;
+    export let idTest;
+    export let porc = 0;
     let cont = 0;
     let numPreguntas;
+    console.log(idTest);
 
         
         numPreguntas = preguntas.length;
@@ -14,22 +17,28 @@
             cont++;
         }
         }
+        porc=(cont/numPreguntas)*100;
 
-    const handleClick = () => {
+  /*  const handleClick = () => {
     $storeResp.respuestasEval = [];
     $store.salir = false;
     window.location.assign("/studentPage");
-}
+}*/
 
     
 </script>
+
 <div class="solution">
 <h2 id="finalSol">Has respondido correctamente {cont} de {numPreguntas} preguntas.</h2>
+<p>{idTest}</p>
 </div>
 <div class="boton-salir">
-    <button on:click={handleClick}>
-        Salir
-    </button>
+    <form action={`/studentPage/chooseTest/${idTest}?/addHistory&idTest=+${idTest}&porcentaje=+${porc}`} method="POST">
+        <button type="submit">
+            Salir
+        </button>
+    </form>
+
 </div>
 
 <style>

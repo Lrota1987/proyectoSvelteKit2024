@@ -9,19 +9,21 @@
 
 <div id="fondo">
   <div id="fondo2"/>
-    {#if $store.salir === false}
+    {#if $store.salir === false && test}
     <div class="container-preg" >
       <Pregunta
         bind:preguntas={test.preguntas}
         />
     </div>
     
-    {:else}
+    {:else if $store.salir === true && test}
       <AdminResp
         preguntas={test.preguntas}
+        idTest={test.id}
         />
-
-      {/if}
+    {:else}
+    Loading....
+    {/if}
     <!--
     <div class="container-menu">
       <Menu/>

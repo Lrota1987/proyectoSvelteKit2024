@@ -132,7 +132,22 @@
       "id": 1,
       "name": "jose",
       "password": "123",
-      "teacher": 1
+      "teacher": 1,
+      "puntos": 175
+    }
+  ],
+  "record": [
+    {
+      "id": 1,
+      "student": "jose",
+      "test": 1,
+      "puntosGan": 75
+    },
+    {
+      "id": 2,
+      "student": "jose",
+      "test": 2,
+      "puntosGan": 100
     }
   ]
 }
