@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 import { redirect } from '@sveltejs/kit';
 
 export const actions = {
-	async addHistory ({cookies, url}) {
+	async addHistory ({cookies, url, fetch}) {
 
         storeResp.respuestasEval = [];
         store.salir = false;
@@ -41,17 +41,19 @@ export const actions = {
                             else {
                                 pickedId = 1;
                             }
-                            const time = async ({fetch}) => {
                                 const response2 = await fetch('/api/currentTime');
                                 const currentTime = await response2.text();
-                                return currentTime;
-                            }
+
+
+                            console.log(currentTime);
+
+
 
                             const newRecord = {
                                 id: pickedId,
                                 student: username,
                                 test: parseInt(idTest),
-                                date: time,
+                                date: currentTime,
                                 puntosGan:parseFloat(porc)
                             };
 

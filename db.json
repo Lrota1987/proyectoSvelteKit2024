@@ -133,21 +133,30 @@
       "name": "jose",
       "password": "123",
       "teacher": 1,
-      "puntos": 175
+      "puntos": 125
     }
   ],
   "record": [
     {
       "id": 1,
       "student": "jose",
-      "test": 1,
-      "puntosGan": 75
+      "test": 2,
+      "date": "13/2/2024, 10:20:50",
+      "puntosGan": 0
     },
     {
       "id": 2,
       "student": "jose",
-      "test": 2,
-      "puntosGan": 100
+      "test": 1,
+      "date": "13/2/2024, 10:21:26",
+      "puntosGan": 75
+    },
+    {
+      "id": 3,
+      "student": "jose",
+      "test": 1,
+      "date": "13/2/2024, 10:56:15",
+      "puntosGan": 50
     }
   ]
 }

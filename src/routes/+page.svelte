@@ -1,6 +1,8 @@
 <script>
 	import { scale } from "svelte/transition";
 
+
+
     var start = false;
     setTimeout(()=>start=true, 2100);
 </script>

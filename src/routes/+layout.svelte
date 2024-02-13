@@ -1,6 +1,11 @@
 <script>
     import { navigating } from '$app/stores';
     import Header from "$lib/header.svelte";
+
+    export let data;
+    export let student = data.student;
+    console.log(student);
+
 </script>
 
 <Header

@@ -2,7 +2,25 @@
     import { page } from '$app/stores';
     import storeIsTeacherStudent from '../stores/storeIsTeacherStudent.js'
 
+    let puntuacion = 0;
 
+    // Comprueba si la página y sus datos están disponibles
+    if ($page) {
+
+        // Verifica si 'records' está presente en los datos de la página
+        if ($page.data && $page.data.student) {
+            const students = $page.data.student;
+            console.log(students);
+            console.log($page.data.username);
+            
+            // Asigna los registros a la variable puntuacion
+            for (let student of students) {
+                if (student.name === $page.data.username ) {
+                    puntuacion = student.puntos;
+}
+            }
+        }
+    }
 
 </script>
 
@@ -25,6 +43,9 @@
                     <a href="/teacherPage">Personal</a>
                 {:else}
                     <a href="/studentPage">Personal</a>
+                    <p class="student__score">
+                        Tu puntuación es: {puntuacion}
+                    </p>
                 {/if}
                 <form action="/logIn?/logout&redirectTo=/" method="POST">
                     <button type="submit">Logout</button>
