@@ -39,9 +39,10 @@
     {:else}
         <header class="layout-header2">
             {#if !$page.data.test}
-                {#if $storeIsTeacherStudent.isTeacher}
+                {#if $page.data.role === "teacher"}
                     <a href="/teacherPage">Personal</a>
-                {:else}
+                {/if}
+                {#if $page.data.role === "student"}
                     <a href="/studentPage">Personal</a>
                     <p class="student__score">
                         Tu puntuación es: {puntuacion}

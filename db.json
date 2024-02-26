@@ -114,6 +114,74 @@
           ]
         }
       ]
+    },
+    {
+      "id": 3,
+      "preguntas": [
+        {
+          "Pregunta": "Capital de grecia?",
+          "respuestas": [
+            {
+              "resp": "Berlin",
+              "correcto": false
+            },
+            {
+              "resp": "Andorra",
+              "correcto": false
+            },
+            {
+              "resp": "Atenas",
+              "correcto": true
+            },
+            {
+              "resp": "Londres",
+              "correcto": false
+            }
+          ]
+        },
+        {
+          "Pregunta": "Capital de UK?",
+          "respuestas": [
+            {
+              "resp": "Londres",
+              "correcto": true
+            },
+            {
+              "resp": "Madrid",
+              "correcto": false
+            },
+            {
+              "resp": "Nueva York",
+              "correcto": false
+            },
+            {
+              "resp": "Galapagar",
+              "correcto": false
+            }
+          ]
+        },
+        {
+          "Pregunta": "Cual es la montaña más alta de España?",
+          "respuestas": [
+            {
+              "resp": "Peñalara",
+              "correcto": false
+            },
+            {
+              "resp": "Mulhacen",
+              "correcto": false
+            },
+            {
+              "resp": "Teide",
+              "correcto": true
+            },
+            {
+              "resp": "Aneto",
+              "correcto": false
+            }
+          ]
+        }
+      ]
     }
   ],
   "teachers": [
@@ -125,6 +193,14 @@
         1,
         2
       ]
+    },
+    {
+      "id": 2,
+      "name": "Miriam",
+      "password": "hola",
+      "test": [
+        3
+      ]
     }
   ],
   "students": [
@@ -133,7 +209,14 @@
       "name": "jose",
       "password": "123",
       "teacher": 1,
-      "puntos": 125
+      "puntos": 200
+    },
+    {
+      "id": 2,
+      "name": "Luciano",
+      "password": "123",
+      "teacher": 2,
+      "puntos": 66.66
     }
   ],
   "record": [
@@ -157,6 +240,27 @@
       "test": 1,
       "date": "13/2/2024, 10:56:15",
       "puntosGan": 50
+    },
+    {
+      "id": 4,
+      "student": "Luciano",
+      "test": 3,
+      "date": "13/2/2024, 17:45:32",
+      "puntosGan": 66.66
+    },
+    {
+      "id": 5,
+      "student": "Chano",
+      "test": 4,
+      "date": "23/2/2024, 1:42:52",
+      "puntosGan": 66.66666666666666
+    },
+    {
+      "id": 6,
+      "student": "jose",
+      "test": 1,
+      "date": "23/2/2024, 1:46:36",
+      "puntosGan": 75
     }
   ]
 }

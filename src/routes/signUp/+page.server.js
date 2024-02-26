@@ -65,7 +65,8 @@ export const actions = {
                     id: pickedId,
                     name: username,
                     password: password,
-                    teacher: teacherId
+                    teacher: teacherId,
+                    puntos: 0
                 };
 
                 const response2 = await fetch('http://localhost:4001/students', {
