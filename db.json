@@ -209,7 +209,7 @@
       "name": "jose",
       "password": "123",
       "teacher": 1,
-      "puntos": 200
+      "puntos": 650
     },
     {
       "id": 2,
@@ -261,6 +261,76 @@
       "test": 1,
       "date": "23/2/2024, 1:46:36",
       "puntosGan": 75
+    },
+    {
+      "id": 7,
+      "student": "jose",
+      "test": 2,
+      "date": "26/2/2024, 12:45:00",
+      "puntosGan": 0
+    },
+    {
+      "id": 8,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:34:56",
+      "puntosGan": 50
+    },
+    {
+      "id": 9,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:00",
+      "puntosGan": 50
+    },
+    {
+      "id": 10,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:02",
+      "puntosGan": 50
+    },
+    {
+      "id": 11,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:03",
+      "puntosGan": 50
+    },
+    {
+      "id": 12,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:06",
+      "puntosGan": 50
+    },
+    {
+      "id": 13,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:07",
+      "puntosGan": 50
+    },
+    {
+      "id": 14,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:09",
+      "puntosGan": 50
+    },
+    {
+      "id": 15,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:10",
+      "puntosGan": 50
+    },
+    {
+      "id": 16,
+      "student": "jose",
+      "test": 1,
+      "date": "26/2/2024, 13:35:11",
+      "puntosGan": 50
     }
   ]
 }

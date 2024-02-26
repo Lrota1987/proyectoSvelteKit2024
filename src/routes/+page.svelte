@@ -148,6 +148,7 @@ margin-left: 30px;
         color: #fff;
         background-color: rgb(200, 0, 0);
         font-size:40px;
+        padding: 3px;
         text-decoration:double;
         background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
         background-size: 400% 400%;
