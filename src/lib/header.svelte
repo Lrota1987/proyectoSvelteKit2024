@@ -48,8 +48,8 @@
                         Tu puntuación es: {puntuacion}
                     </p>
                 {/if}
-                <form action="/logIn?/logout&redirectTo=/" method="POST">
-                    <button type="submit">Logout</button>
+                <form action="/logIn?/logout&redirectTo=/" method="POST" >
+                    <button type="submit"  class="botonSinFondo"><img src="/src/assets/logout.png" alt="" class="logout"></button>
                 </form>
             {/if}
         </header>
@@ -65,7 +65,18 @@
 		text-decoration: none;
         margin-right: 15px;
 	}
-
+    .botonSinFondo{
+        background-color: #00000000;
+        border: none;        
+    }
+    .logout{
+    
+    cursor:pointer;
+    border:none;
+    width:20px;
+    height:20px;
+    padding: 0px;
+    }
     .layout-header {
         display: flex;
 		background-color: #0b6285;
