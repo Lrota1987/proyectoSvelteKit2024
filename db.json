@@ -182,53 +182,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": 4,
-      "preguntas": [
-        {
-          "Pregunta": "un buen lenguaje:",
-          "respuestas": [
-            {
-              "resp": "sklhkjhads",
-              "correcto": false
-            },
-            {
-              "resp": "sldhlsd",
-              "correcto": false
-            },
-            {
-              "resp": "php",
-              "correcto": true
-            },
-            {
-              "resp": "skjkjhjkds",
-              "correcto": false
-            }
-          ]
-        },
-        {
-          "Pregunta": "",
-          "respuestas": [
-            {
-              "resp": "",
-              "correcto": true
-            },
-            {
-              "resp": "",
-              "correcto": false
-            },
-            {
-              "resp": "",
-              "correcto": false
-            },
-            {
-              "resp": "",
-              "correcto": false
-            }
-          ]
-        }
-      ]
     }
   ],
   "teachers": [
@@ -239,7 +192,17 @@
       "test": [
         1,
         2,
-        4
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        10
       ]
     },
     {
