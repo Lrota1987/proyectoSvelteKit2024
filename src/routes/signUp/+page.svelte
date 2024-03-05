@@ -91,7 +91,7 @@
                 </tr>
             </table>  
             <div class="container-registrer__submit">
-                <input type="submit" id="submit" value="Registrer">
+                <input type="submit" id="submit" value="Registrer" class="btn">
             </div>
         {/if}
         {#if isStudent}
@@ -142,7 +142,7 @@
                 </tr>
             </table>
             <div class="container-registrer__submit">
-                <input type="submit" id="submit" value="Registrer">
+                <input type="submit" id="submit" value="Registrer" class="btn">
             </div>
         {/if}
 
@@ -164,6 +164,48 @@
         text-align: center;
         padding: 20px;
         color: black;
+    }
+    .btn{
+        color: #fff;
+        font-family: 'MedievalSharp' ;
+		font-weight: 600;
+        background-color: var(--rojo-oscuro-1) ;
+        cursor: default;
+        font-size:36px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 300px;
+        height: 50px;  
+        border-radius: 5px;
+        border: 3px solid var(--rojo-oscuro-2); 
+        padding: 5px;
+        margin: 10px;   
+    }
+    .btn:hover{
+        color: #fff;
+        background-color: rgb(200, 0, 0);
+        font-size:40px;
+        padding: 3px;
+        text-decoration:double;
+        background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
+        background-size: 400% 400%;
+        animation: gradient 3s infinite;
+    
+    }
+     
+    @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
     }
     td {
         padding: 5px;

@@ -29,6 +29,16 @@
         margin-top: 0px
     }
 
+    .loading {
+        height: 100vh;
+        background-color: black;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 </style>
 
 
