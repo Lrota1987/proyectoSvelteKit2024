@@ -24,15 +24,6 @@
     {:else}
     Loading....
     {/if}
-    <!--
-    <div class="container-menu">
-      <Menu/>
-    </div>
-      <div>
-      <p>{test.preguntas[0].Pregunta}</p>
-      </div>
-      -->
-    
     
 </div>
 

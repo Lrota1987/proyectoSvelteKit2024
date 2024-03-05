@@ -24,9 +24,7 @@
 <br>
 
 <style>
-    .deleteUser:link, .deleteUser:visited {
-        color: red;
-    }
+    
     #myVideo {
         position: fixed;
         right: 0;
