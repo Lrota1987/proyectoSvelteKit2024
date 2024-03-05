@@ -19,8 +19,11 @@
 
 </script>
 
-
-<p>Sign Up</p>
+<video autoplay muted loop id="myVideo">
+    <source src="/src/assets/EscenariosWeb.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<p class="title">Sign Up</p>
 
 <div class="container-registrer">
     <form action="?/registrer" method="POST">
@@ -148,6 +151,20 @@
 </div>
 
 <style>
+     #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
+    }
+    .title {
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+        color: black;
+    }
     td {
         padding: 5px;
     }
