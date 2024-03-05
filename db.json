@@ -116,74 +116,6 @@
       ]
     },
     {
-      "id": 3,
-      "preguntas": [
-        {
-          "Pregunta": "Capital de grecia?",
-          "respuestas": [
-            {
-              "resp": "Berlin",
-              "correcto": false
-            },
-            {
-              "resp": "Andorra",
-              "correcto": false
-            },
-            {
-              "resp": "Atenas",
-              "correcto": true
-            },
-            {
-              "resp": "Londres",
-              "correcto": false
-            }
-          ]
-        },
-        {
-          "Pregunta": "Capital de UK?",
-          "respuestas": [
-            {
-              "resp": "Londres",
-              "correcto": true
-            },
-            {
-              "resp": "Madrid",
-              "correcto": false
-            },
-            {
-              "resp": "Nueva York",
-              "correcto": false
-            },
-            {
-              "resp": "Galapagar",
-              "correcto": false
-            }
-          ]
-        },
-        {
-          "Pregunta": "Cual es la montaña más alta de España?",
-          "respuestas": [
-            {
-              "resp": "Peñalara",
-              "correcto": false
-            },
-            {
-              "resp": "Mulhacen",
-              "correcto": false
-            },
-            {
-              "resp": "Teide",
-              "correcto": true
-            },
-            {
-              "resp": "Aneto",
-              "correcto": false
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": 4,
       "preguntas": [
         {
@@ -202,7 +134,7 @@
               "correcto": false
             },
             {
-              "resp": "Corgi",
+              "resp": "Area",
               "correcto": true
             }
           ]
@@ -220,14 +152,6 @@
         2,
         4
       ]
-    },
-    {
-      "id": 2,
-      "name": "Miriam",
-      "password": "hola",
-      "test": [
-        3
-      ]
     }
   ],
   "students": [
@@ -237,13 +161,6 @@
       "password": "123",
       "teacher": 1,
       "puntos": 1000
-    },
-    {
-      "id": 2,
-      "name": "Luciano",
-      "password": "123",
-      "teacher": 2,
-      "puntos": 66.66
     }
   ],
   "record": [
@@ -400,6 +317,20 @@
       "test": 4,
       "date": "5/3/2024, 10:01:16",
       "puntosGan": 0
+    },
+    {
+      "id": 23,
+      "student": "jose",
+      "test": 2,
+      "date": "5/3/2024, 12:35:50",
+      "puntosGan": 0
+    },
+    {
+      "id": 24,
+      "student": "Luciano",
+      "test": 3,
+      "date": "5/3/2024, 12:38:31",
+      "puntosGan": 66.66666666666666
     }
   ]
 }
