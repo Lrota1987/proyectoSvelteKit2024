@@ -180,9 +180,7 @@
         border: 3px solid black; 
         color: rgb(108, 108, 202);
     }
-    form {
-
-    }
+    
     #myVideo {
         position: fixed;
         right: 0;

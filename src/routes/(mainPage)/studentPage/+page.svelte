@@ -11,18 +11,20 @@
 
 <div class="container">
     <div class="container__imagen">
+        <!--
         <div class="container__imagen__1">
             <img src="/src/assets/guerrero.png" alt="guerrero" class="container__imagen__1--guerrero">
         </div>
+        -->
         <fieldset class="fielmedio">
             <div class="marco">
                 <b >{data.username}</b>
             </div>
             <div class="marco">
-                <a href={"/studentPage/chooseTest"} class="btn">Choose a test</a>
+                <a href={"/studentPage/chooseTest"} class="btn">Tests</a>
             </div>
             <div class="marco">
-                <a href={"/studentPage/userSettings"} class="btn">User Settings</a>
+                <a href={"/studentPage/userSettings"} class="btn">Settings</a>
             </div>
         </fieldset>
        
@@ -98,13 +100,14 @@
     }
     .marco{       
         display: flex;
-        font-weight: 600;
-        font-size: 36px;
+        font-weight: 900;
+        font-size: 40px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         padding: 0.2em;
         text-align: center;
+        color: #fff;
     }
     .container {
         &__imagen {
@@ -113,66 +116,13 @@
             grid-template-columns: repeat(6, 200px);
             grid-template-rows: repeat(2, 250px);
             &__1 {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 3;
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 4;
+                grid-row-end: 6;
                 &--guerrero {
                     height: 100%;
                     width: 100%;
-
-  
-                }
-            }
-            &__2 {
-                grid-column-start: 3;
-                grid-column-end: 5;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                &__texto--1 {
-                        position: relative;
-                        left: -50px;
-                        top:25%;
-                        width: 100%;
-                        font-size: 50px;
-                        color:rgb(131, 112, 5);
-                    }
-            }
-            &__3 {
-                grid-column-start: 5;
-                grid-column-end: 7;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                width: 50%;
-                height: 25%;
-                background-color: brown;
-                border: 5px solid gold;
-                text-align: center;
-                &--a:link, &--a:visited, &--a:active  {
-                    text-decoration: none;
-                    position: relative;
-                    top:30%;
-                    font-size: x-large;
-                    color: gold;
-                }
-                
-            }
-            &__4 {
-                grid-column-start: 5;
-                grid-column-end: 7;
-                grid-row-start: 2;
-                grid-row-end: 3;
-                width: 50%;
-                height: 25%;
-                background-color: brown;
-                border: 5px solid gold;
-                text-align: center;
-                &--a:link, &--a:visited, &--a:active {
-                    text-decoration: none;
-                    position: relative;
-                    top:30%;
-                    font-size: x-large;
-                    color: gold;
                 }
             }
         }

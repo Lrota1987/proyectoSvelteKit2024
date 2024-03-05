@@ -182,6 +182,32 @@
           ]
         }
       ]
+    },
+    {
+      "id": 4,
+      "preguntas": [
+        {
+          "Pregunta": "Cual es el mejor perro?",
+          "respuestas": [
+            {
+              "resp": "Snaucer",
+              "correcto": false
+            },
+            {
+              "resp": "Doberman",
+              "correcto": false
+            },
+            {
+              "resp": "Bichon maltes",
+              "correcto": false
+            },
+            {
+              "resp": "Corgi",
+              "correcto": true
+            }
+          ]
+        }
+      ]
     }
   ],
   "teachers": [
@@ -202,7 +228,8 @@
         8,
         8,
         9,
-        10
+        10,
+        4
       ]
     },
     {
@@ -220,7 +247,7 @@
       "name": "jose",
       "password": "123",
       "teacher": 1,
-      "puntos": 700
+      "puntos": 1000
     },
     {
       "id": 2,
@@ -349,6 +376,34 @@
       "test": 4,
       "date": "4/3/2024, 11:00:00",
       "puntosGan": 50
+    },
+    {
+      "id": 18,
+      "student": "jose",
+      "test": 4,
+      "date": "4/3/2024, 22:12:18",
+      "puntosGan": 100
+    },
+    {
+      "id": 19,
+      "student": "jose",
+      "test": 4,
+      "date": "4/3/2024, 23:50:29",
+      "puntosGan": 100
+    },
+    {
+      "id": 20,
+      "student": "jose",
+      "test": 4,
+      "date": "5/3/2024, 0:09:11",
+      "puntosGan": 100
+    },
+    {
+      "id": 21,
+      "student": "jose",
+      "test": 1,
+      "date": "5/3/2024, 1:15:26",
+      "puntosGan": 0
     }
   ]
 }
