@@ -70,7 +70,7 @@
         <input type="hidden" name="objeto" value={array}>
         <div class="form-container">
         {#each array as obj, numero}
-            <div>
+            <div class="div-int">
             <table>
                 <tr>
                     <td>
@@ -154,10 +154,13 @@
 
 </form>
 <br>
-<button on:click={handleClick} class="button">Añadir pregunta</button>
-<button on:click={handleClick2} class="button">Eliminar pregunta</button>
+<button on:click={handleClick} class="btn">Añadir pregunta</button>
+<button on:click={handleClick2} class="btn btnEliminar">Eliminar pregunta</button>
 </div>
 <style>
+    .div-int {
+        padding: 10px;
+    }
     .title {
         font-size: 50px;
         text-align: center;
@@ -177,7 +180,9 @@
         grid-gap: 25px;
         background-color:  #03212cb7;
         border-radius: 5px;
-        border: 3px solid black; 
+        border: 3px solid black;
+        width: 80%;
+        margin: 0 auto; 
         color: rgb(108, 108, 202);
     }
     #myVideo {
@@ -191,30 +196,66 @@
     }
     .button {
         color: #fff;
+        font-weight: 600;
+        font-family: 'MedievalSharp' ;
         background-color: var(--rojo-oscuro-1) ;
         cursor: default;
-        font-size:15px;
+        font-size:20px;
         position: relative;
         text-transform: uppercase;
-        text-decoration: none; 
+        text-decoration: none;
+        width: 275px;
+        height: 50px;  
         border-radius: 5px;
         border: 3px solid var(--rojo-oscuro-2); 
         padding: 5px;
-        margin: 10px;   
-        width: 250px;
+        margin-left: 10%;
+        transform: translateY(15vh);   
         
     }
 
     .button:hover{
         color: #fff;
         background-color: rgb(200, 0, 0);
-        font-size:15px;
+        font-size:23px;
         padding: 3px;
+        height: 50px;
         text-decoration:double;
         background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
         background-size: 400% 400%;
         animation: gradient 3s infinite;
-    
+    }
+    .btn{
+        color: #fff;
+        font-weight: 600;
+        font-family: 'MedievalSharp' ;
+        background-color: #002896 ;
+        cursor: default;
+        font-size:20px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 275px;
+        height: 50px;  
+        border-radius: 5px;
+        border: 3px solid #001653 ; 
+        padding: 5px;
+        margin-left: 10%;   
+    }
+    .btn:hover{
+        color: #fff;
+        background-color: rgb(200, 0, 0);
+        font-size:25px;
+        padding: 3px;
+        height: 50px;
+        text-decoration:double;
+        background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(0, 0, 255), rgb(0, 255, 255),rgb(0, 100, 255));
+        background-size: 400% 400%;
+        animation: gradient 3s infinite;
+    }
+
+    .btnEliminar {
+        margin-left: 25px;
     }
     
     @keyframes gradient {
