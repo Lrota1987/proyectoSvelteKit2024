@@ -149,13 +149,13 @@
 
         {/each}
     </div>
-        <input type="submit" value="Crear cuestionario" class="enviar">
-
+    <button type="submit" class=" enviar button">Crear cuestionario</button>
 
 
 </form>
-<button on:click={handleClick}>Añadir pregunta</button>
-<button on:click={handleClick2}>Eliminar pregunta</button>
+<br>
+<button on:click={handleClick} class="button">Añadir pregunta</button>
+<button on:click={handleClick2} class="button">Eliminar pregunta</button>
 </div>
 <style>
     .title {
@@ -180,7 +180,6 @@
         border: 3px solid black; 
         color: rgb(108, 108, 202);
     }
-    
     #myVideo {
         position: fixed;
         right: 0;
@@ -190,14 +189,50 @@
         z-index: -1;
 
     }
-    button {
-        height: 25px;
-        width: 125px;
+    .button {
+        color: #fff;
+        background-color: var(--rojo-oscuro-1) ;
+        cursor: default;
+        font-size:15px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none; 
+        border-radius: 5px;
+        border: 3px solid var(--rojo-oscuro-2); 
+        padding: 5px;
+        margin: 10px;   
+        width: 250px;
+        
     }
+
+    .button:hover{
+        color: #fff;
+        background-color: rgb(200, 0, 0);
+        font-size:15px;
+        padding: 3px;
+        text-decoration:double;
+        background: linear-gradient(-45deg, var(--rojo-oscuro-1),rgb(175, 0, 0), rgb(255, 0, 0),var(--rojo-oscuro-1));
+        background-size: 400% 400%;
+        animation: gradient 3s infinite;
+    
+    }
+    
+    @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+    }
+
     .enviar {
         margin-bottom: -25px;
-        height: 25px;
-        width: 125px;
         order: 2;
         grid-row: -1;
     }
