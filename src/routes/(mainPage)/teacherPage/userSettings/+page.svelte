@@ -1,6 +1,3 @@
-<p>USER SETTINGS</p>
-
-
 
 <script>
     export var data;
