@@ -13,7 +13,10 @@
 <div class="container">
 {#if $navigating}
     <div class="loading">
-        <p class="loading--text">loading...</p>
+
+            <span class="loader loader-quart"></span>
+            loading...
+        
     </div>
 {:else}
 
@@ -33,10 +36,22 @@
         height: 100vh;
         background-color: black;
         color: white;
-
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .loader-quart {
+	border-radius: 50%;
+	border: 6px solid rgba(255,255,255,0.4);
+    }
+
+    .loader-quart::after {
+        content: '';
+        border-radius: 50%;
+        border: 6px solid transparent;
+        border-top-color: #fff;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
     }
 
 </style>
