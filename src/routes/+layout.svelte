@@ -4,7 +4,6 @@
 
     export let data;
     export let student = data.student;
-    console.log(student);
 
 </script>
 

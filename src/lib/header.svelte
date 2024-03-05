@@ -31,11 +31,12 @@
 
 
     {#if !$page.data.username}
-    <header class="layout-header">
-        <a href="/logIn">LogIn</a>
-        <a href="/signUp">SignUp</a>
-        <a href="/">Home</a>
-    </header>
+
+        <header class="layout-header">
+            <a href="/logIn">LogIn</a>
+            <a href="/signUp">SignUp</a>
+            <a href="/">Home</a>
+        </header>
     {:else}
         <header class="layout-header2">
             {#if !$page.data.test}
